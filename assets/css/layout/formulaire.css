@@ -1,0 +1,145 @@
+/* Style pour mon Formulaire */
+
+
+.formulaire-multi-etapes {
+    font-family: "Playwrite DE Grund", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulaire-container {
+    background-color: #dcb0b0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 700px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.formulaire-titre {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styles des sections */
+.section-cachee {
+    display: none;
+}
+
+.section-active {
+    display: block;
+}
+
+/* Champs de formulaire */
+.formulaire-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulaire-champ {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.formulaire-radio {
+    width: auto;
+    margin-right: 10px;
+}
+
+.formulaire-fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+/* Boutons */
+.formulaire-bouton {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.formulaire-bouton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.formulaire-bouton:hover:enabled {
+    background-color: #1a5fb4;
+}
+
+.bouton-precedent {
+    background-color: #6a11cb;
+}
+
+.bouton-precedent:hover {
+    background-color: #5010a3;
+}
+
+/* Indication de validation */
+.formulaire-champ:invalid {
+    border-color: red;
+}
+
+.formulaire-champ:valid {
+    border-color: green;
+}
+
+/* Styles supplementaires : effet visuel */
+.formulaire-container {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+}
+
+.formulaire-champ:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.2);
+}
+
+.formulaire-fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.formulaire-legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Message d'erreur */
+
+.formulaire-champ:invalid + .error-message {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    display: none;
+}

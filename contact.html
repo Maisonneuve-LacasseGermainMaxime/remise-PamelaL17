@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="assets/js/pages/formulaire.js" defer></script>
+        <script src="assets/js/components/navigation.js" defer></script>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel=stylesheet">
+        <title>Travail pratique 2</title>
+    </head>
+    <body class="body-formulaire">
+        <header>
+            <a href="index.html">
+                <img class="logo" src="assets/img/logo-transparent-svg.svg" alt="logo">
+            </a>
+            <nav></nav>
+        </header>    
+        <div class="formulaire-multi-etapes">
+            <div class="formulaire-container">
+                <!-- Info personnels -->
+                <div class="section-active" id="etape1">
+                    <h2 class="formulaire-titre">Informations personnels</h2>
+                    <label class="formulaire-label" for="nom">Nom :</label>
+                    <input class="formulaire-champ" type="text" id="nom" name="nom" required>
+                    <div class="error-message">Veuillez entrer votre nom.</div>
+
+                    <label class="formulaire-label" for="prenom">Prénom :</label>
+                    <input class="formulaire-champ" type="text" id="prenom" name="prenom" required>
+                    <div class="error-message">Veuillez entrer votre prénom.</div>
+
+                    <label class="formulaire-label" for="email">Courriel :</label>
+                    <input class="formulaire-champ" type="email" id="email" name="email" required>
+                    <div class="error-message">Veuillez entrer votre courriel.</div>
+
+                    <label class="formulaire-label" for="numero">Numéro de téléphone :</label>
+                    <input class="formulaire-champ" type="tel" id="numero" name="numero" required>
+                    <div class="error-message">Veuillez entrer votre numéro de téléphone.</div>
+
+                    <button class="formulaire-bouton bouton-precedent" disabled>Précédent</button>
+                    <button class="formulaire-bouton" onclick="suivant(1)">Suivant</button>
+                </div>
+
+                <!-- Livraison -->
+                <div class="section-cachee" id="etape2">
+                    <h2 class="formulaire-titre">Livraison</h2>
+                    <label for="adresse" class="formulaire-label">Adresse :</label>
+                    <input type="text" id="adresse" class="formulaire-champ" name="adresse" required>
+                    <div class="error-message">Veuillez entrer votre adresse.</div>
+                
+                    <label for="ville" class="formulaire-label">Ville :</label>
+                    <input type="text" id="ville" class="formulaire-champ" name="ville" required>
+                    <div class="error-message">Veuillez entrer votre ville.</div>
+                
+                    <label for="code-postal" class="formulaire-label">Code Postal :</label>
+                    <input type="text" id="code-postal" class="formulaire-champ" name="code-postal" required>
+                    <div class="error-message">Veuillez entrer votre code postal.</div>
+                
+                    <label for="livraison" class="formulaire-label">Mode de Livraison :</label>
+                    <select id="livraison" class="formulaire-champ" name="livraison" required>
+                        <option value="standard">Standard (10 à 14 jours ouvrables)</option>
+                        <option value="express">Express (3 à 5 jours ouvrables - 15,79$)</option>
+                    </select>
+                
+                    <button class="formulaire-bouton bouton-precedent" onclick="precedent(2)">Précédent</button>
+                    <button class="formulaire-bouton" onclick="suivant(2)">Suivant</button>
+                </div>
+
+                <!-- Recapitulatif de la livraison -->
+                <div class="section-cachee" id="etape3">
+                    <h2 class="formulaire-titre">Récapitulatif de la livraison</h2>
+                
+                    <div class="recapitulatif">
+                        <p><strong>Nom :</strong> <span id="recapNom"></span></p>
+                        <p><strong>Email :</strong> <span id="recapEmail"></span></p>
+                        <p><strong>Adresse de Livraison :</strong> <span id="recapAdresse"></span></p>
+                        <p><strong>Méthode de Livraison :</strong> <span id="recapLivraison"></span></p>
+                    </div>
+
+                    <div class="checkbox-verification">
+                        <label>
+                            <input type="checkbox" id="checkboxVerification"> Vérifiez vos informations avant de soumettre.
+                        </label>
+                    </div>>
+
+                    <button class="formulaire-bouton bouton-precedent" onclick="precedent(3)">Précédent</button>
+                    <button class="formulaire-bouton" onclick="soumettre()">Soumettre</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="top">
+                <a href="index.html">
+                    <img class="logo" src="assets/img/logo-transparent-svg.svg" alt="logo">
+                </a>
+                <nav></nav>
+            </div>
+            <p>&copy; Travail pratique 1-2-3, Pamela Limoges</p>
+        </footer>
+        
+    </body>
+</html>

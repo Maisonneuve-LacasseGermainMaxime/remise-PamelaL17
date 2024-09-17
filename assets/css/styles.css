@@ -1,0 +1,19 @@
+/* Base et variables */
+@import url("./base/typography.css");
+/* Composants individuels */
+@import url("./components/buttons.css");
+@import url("./components/modal.css");
+@import url("./components/carousel.css");
+
+/* Mise en page complexe */
+@import url("./layout/general.css");
+@import url("./layout/accueil.css");
+@import url("./layout/formulaire.css");
+@import url("./layout/a-propos.css");
+@import url("./layout/mediaqueries.css");
+
+/* Exceptions */
+
+
+
+

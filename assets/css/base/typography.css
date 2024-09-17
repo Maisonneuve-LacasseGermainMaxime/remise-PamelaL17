@@ -1,0 +1,12 @@
+* {
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+nav {
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 1.2rem;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}

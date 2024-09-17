@@ -1,0 +1,17 @@
+/* Boutons de trie */
+.bouton {
+    display: flex;
+    gap: 10px;
+}
+
+.bouton button {
+    padding: 10px 20px;
+    background-color: #dbb7bc;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.bouton button:hover {
+    background-color: #914949;
+}
