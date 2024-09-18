@@ -6,90 +6,175 @@
     background-color: #eaeaea;
 }
 
-.header-apropos {
-    position: relative;
-    text-align: center;
-    padding-top: 1em;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 18vh;
-    background-color: rgb(220, 212, 212);
-    background-image: none;
-}
-
-.logo-apropos {
-    display: block;
-    max-width: 120px;
-}
-
-.nav-apropos {
-    margin-top: -70px;
-}
-
 .main-apropos {
     display: flex;
     flex-direction: column;
 }
-  
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 100vw; 
-    height: 40vh; 
-    background-image: url('/tp/Tp1-2-3_PamelaLimoges/assets/img/magasin-vin.jpg');
-    background-size: cover;                                                                 
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    color: white;
-    animation: animateBackground 5s ease-out 7s 1 normal both;
+
+.us-section {
+    width: 100%;
+    padding: 50px 0;
+    margin-top: -50px;
 }
 
-@keyframes animateBackground {
-    0% {
-      background-position: center bottom;
-    }
-    100% {
-      background-position: center center;
-    }
+.us-section h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 120px;
+    color: #3e3e3e;
+}
+
+.us-section h1::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background-color: #b09393;
+    border-radius: 50px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.us-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.us-image {
+    flex: 1;
+    text-align: center;
+}
+
+.us-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.us-title {
+    font-size: 28px;
+    color: #3e3e3e;
+    margin-bottom: 20px;
+}
+
+.us-paragraphe {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
 }
 
 .our-mission {
     text-align: center;
     padding: 30px 20px;
+    margin-bottom: 30px;
 }
-  
+
 .our-mission-title h2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
-  
+
 .our-mission-title p {
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
-  
+
 .our-mission-content {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
-  
+
 .our-mission-content div {
     text-align: center;
     flex-basis: 30%;
 }
-  
+
 .our-mission-content img {
     margin-bottom: 10px;
 }
-  
+
 .our-mission-content h3 {
-    font-size: 1rem; 
+    font-size: 1rem;
     color: #555;
     font-style: italic;
 }
 
+.phrase-section {
+    width: 100%;
+    height: 200px;
+    background-color: #b09393;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.phrase-section h3 {
+    font-style: italic;
+    color: #3e3e3e;
+    width: 800px;
+    text-align: center;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to top, #b09393, #eaeaea);
+    padding-bottom: 80px;
+}
+
+.post-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 1050px;
+    text-align: center;
+}
+
+.instagram {
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    width: 300px;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
