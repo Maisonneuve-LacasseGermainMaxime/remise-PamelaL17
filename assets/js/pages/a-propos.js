@@ -1,10 +1,12 @@
 import { modal, closeModal, init as initModal, fermer } from '../components/modal.js';
-import { initCarousel, nextSlide, prevSlide } from '../components/carrousel.js';
+import { initCarousel } from '../components/carrousel.js';
+import { initTheme } from '../components/themes.js';
 
 
-function init(){
+function init() {
     initModal();
     initCarousel();
+    initTheme();
 }
 
 init();

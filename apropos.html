@@ -1,156 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>À propos</title>
-        <script src="assets/js/components/navigation.js" defer></script>
-        <script type="module" src="assets/js/pages/a-propos.js"></script>
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzG/vkw7AMCfTPq+Ay+B+eF/aTG6WiC0uWsK9C9LlWXaP80z4M" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-    </head> 
 
-    <body class="body-apropos">
-        <header>
-            <a href="index.html">
-                <img class="logo" src="assets/img/logo-transparent-svg.svg" alt="logo">
-            </a>
-            <nav></nav>
-        </header>  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À propos</title>
+    <script type="module" src="assets/js/components/navigation.js"></script>
+    <script type="module" src="assets/js/pages/a-propos.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+</head>
 
-        <main class="main-apropos">
+<body>
+    <header>
+        <nav></nav>
+    </header>
 
-            <section class="modal" id="newsletterModal">
-                <div class="modal-content">
-                    <span class="modal-close" id="closeModal">&times;</span> <!-- unicode pour un x -->
-                    <h2>Devenez membre et obtenez 20% de rabais sur votre première commande !</h2>
-                    <p>Recevez des nouvelles exclusives et des offres spéciales directement dans votre boîte de réception.</p>
-                    <form class="modal-form">
-                        <label for="nom">Nom :</label>
-                        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" required>
-                        <label for="email">Adresse e-mail :</label>
-                        <input type="email" id="email" name="email" placeholder="Entrez votre courriel" required>
-                        <button type="submit" class="modal-submit">S'abonner</button>
-                    </form>
+    <main class="main-apropos">
+
+        <section class="modal" id="newsletterModal">
+            <div class="modal-content">
+                <span class="modal-close" id="closeModal">&times;</span> <!-- unicode pour un x -->
+                <h2>Devenez membre et obtenez 20% de rabais sur votre première commande !</h2>
+                <p>Recevez des nouvelles exclusives et des offres spéciales directement dans votre boîte de réception.
+                </p>
+                <form class="modal-form">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" required>
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre courriel" required>
+                    <button type="submit" class="modal-submit">S'abonner</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="us-section">
+            <h1>Qui sommes-nous?</h1>
+            <div class="us-content">
+                <div class="us-text">
+                    <h2 class="us-title">Des passionnés de vin</h2>
+                    <p class="us-paragraphe">Chez <strong>Les Vins d'ici</strong>, nous aimons partager notre passion
+                        pour le vin. Nous sélectionnons avec soin des vins de qualité, venant de vignobles locaux et
+                        d'ailleurs. Chaque bouteille que nous proposons a été choisie pour offrir un moment unique et
+                        agréable à déguster, seul ou entre amis. Nous croyons que le vin est plus qu’une boisson, c’est
+                        une expérience à partager. Venez découvrir nos vins et laissez-nous vous accompagner dans vos
+                        choix pour rendre chaque occasion spéciale.
+                    </p>
                 </div>
-            </section>
-            
-            <section class="us-section">
-                <h1>Qui sommes-nous?</h1>
-                <div class="us-content">
-                    <div class="us-text">
-                        <h2 class="us-title">Des passionnés de vin</h2>
-                        <p class="us-paragraphe">Chez <strong>Les Vins d'ici</strong>, nous aimons partager notre passion pour le vin. Nous sélectionnons avec soin des vins de qualité, venant de vignobles locaux et d'ailleurs. Chaque bouteille que nous proposons a été choisie pour offrir un moment unique et agréable à déguster, seul ou entre amis. Nous croyons que le vin est plus qu’une boisson, c’est une expérience à partager. Venez découvrir nos vins et laissez-nous vous accompagner dans vos choix pour rendre chaque occasion spéciale.
-                        </p>
-                    </div>
-                    <div class="us-image">
-                        <img class="us-img" src="/tp/Tp1-2-3_PamelaLimoges/assets/img/magasin-vin.jpg" alt="Vins">
-                    </div>
+                <div class="us-image">
+                    <img class="us-img" src="/tp/Tp1-2-3_PamelaLimoges/assets/img/magasin-vin.jpg" alt="Vins">
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="our-mission">
-                <div class="our-mission-title">
-                  <h2>Notre mission</h2>
-                  <p>Révéler l'essence de notre terroir dans chaque bouteille, pour vous faire vivre une expérience authentique à chaque dégustation.</p>
-                </div>
-                <div class="our-mission-content">
-                  <div>
+        <section class="our-mission">
+            <div class="our-mission-title">
+                <h2>Notre mission</h2>
+                <p>Révéler l'essence de notre terroir dans chaque bouteille, pour vous faire vivre une expérience
+                    authentique à chaque dégustation.</p>
+            </div>
+            <div class="our-mission-content">
+                <div>
                     <img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/icon-vigne.png" alt="Icone Vigne">
                     <h3>De la vigne au verre, une passion dans chaque grain</h3>
-                  </div>
-                  <div>
+                </div>
+                <div>
                     <img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/icon-bouteille.png" alt="Icone Bouteille">
                     <h3>Un monde de saveurs, scellé sous un bouchon</h3>
-                  </div>
-                  <div>
+                </div>
+                <div>
                     <img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/icon-verre.png" alt="Icone Verre de Vin">
                     <h3>Savourer le moment, une histoire dans chaque gorgée</h3>
-                  </div>
-                </div>
-            </section>
-
-            <section class="phrase-section">
-                <h3>« Notre passion pour les vins rouges et blancs se retrouve dans chaque bouteille que nous proposons, offrant à nos clients une expérience de dégustation unique. »</h3>
-            </section>
-
-            <section class="carousel-section">
-                <h2>Découvrez notre sélection de Vin</h2>
-                <div class="carousel">
-                    <div class="carousel-slide"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/produit-1.png" alt="Vin"></div>
-                    <div class="carousel-slide"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/produit-2.png" alt="Vin"></div>
-                    <div class="carousel-slide"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/produit-3.png" alt="Vin"></div>
-                    <div class="carousel-slide"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/produit-4.png" alt="Vin"></div>
-                    <div class="carousel-slide"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/produit-5.png" alt="Vin"></div>
-                    <div class="carousel-slide"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/produit-6.png" alt="Vin"></div>
-                    <div class="carousel-slide"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/produit-7.png" alt="Vin"></div>
-                    <div class="carousel-slide"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/produit-8.png" alt="Vin"></div>
-                    <button class="carousel-prev"></button>
-                    <button class="carousel-next"></button>
-                </div>
-            </section>
-
-            <section class="post-container">
-                <div class="post-heading">Une passion pour le vin, une gorgée à la fois</div>
-                <div class="post-text">Suivez-nous sur Instagram pour découvrir nos dégustations en boutique, nos nouveaux crus et conseils de sommeliers! Partagez vos moments vinicoles avec nous en nous identifiant <a class="instagram" href="#">@LesVinsD'ici</a>, et faites-nous part de vos accords mets-vins et découvertes favorites.
-                </div>
-                <div class="post-text">@LesVinsD'ici</div>
-                <div class="gallery">
-                    <div class="gallery-item"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/degustation-vin.jpg" alt="degustation vin"></div>
-                    <div class="gallery-item"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/bouteille-bouchon.jpg" alt="bouteille de vin"></div>
-                    <div class="gallery-item"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/barils-vin.jpg" alt="barils de vins"></div>
-                </div>
-            </section>
-
-            
-
-        </main>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="infolettre">
-                    <h2 class="infolettre-title">Infolettre</h2>
-                    <p class="infolettre-text">20% de rabais sur votre première commande avec nous!</p>
-                    <form class="infolettre-form">
-                        <input type="email" class="infolettre-input" placeholder="Votre courriel">
-                        <button type="submit" class="infolettre-button">></button>
-                    </form>
-                </div>
-                <div class="footer-section">
-                    <h2 class="footer-section-title">Mon compte</h2>
-                    <ul class="footer-section-list">
-                        <li class="footer-section-item">S'inscrire / connecter vous</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h2 class="footer-section-title">À propos</h2>
-                </div>
-                <div class="footer-section">
-                    <h2 class="footer-section-title">Carrières</h2>
-                    <ul class="footer-section-list">
-                        <li class="footer-section-item">Postuler chez nous</li>
-                        <li class="footer-section-item">Déposer votre candidature</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h2 class="footer-section-title">Service à la clientèle</h2>
-                    <ul class="footer-section-list">
-                        <li class="footer-section-item">Livraison et retours</li>
-                        <li class="footer-section-item">Communiquer avec nous</li>
-                        <li class="footer-section-item">Carte-cadeau</li>
-                        <li class="footer-section-item">Trouver un magasin</li>
-                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p class="footer-bottom-text">&copy; Les vins d'ici, tous les droits réservés.</p>
-            </div>
-        </footer>
+        </section>
 
-    </body>
+        <section class="phrase-section">
+            <h3>« Notre passion pour les vins rouges et blancs se retrouve dans chaque bouteille que nous proposons,
+                offrant à nos clients une expérience de dégustation unique. »</h3>
+        </section>
+
+        <section class="carousel-section">
+            <h2>Découvrez notre sélection de Vin</h2>
+            <nav>
+                <a href="#" class="category-link white-wine"><h2>Blanc</h2></a>
+                <a href="#" class="category-link red-wine"><h2>Rouge</h2></a>
+            </nav>
+        
+            <div class="carousel hidden" id="white-wine-carousel">
+                <div class="carousel-slide"><img src="assets/img/produit-4.png" alt="Vin Blanc"></div>
+                <div class="carousel-slide"><img src="assets/img/produit-7.png" alt="Vin Blanc"></div>
+                <button class="carousel-prev">Prev</button>
+                <button class="carousel-next">Next</button>
+            </div>
+        
+            <div class="carousel hidden" id="red-wine-carousel">
+                <div class="carousel-slide"><img src="assets/img/produit-1.png" alt="Vin Rouge"></div>
+                <div class="carousel-slide"><img src="assets/img/produit-2.png" alt="Vin Rouge"></div>
+                <div class="carousel-slide"><img src="assets/img/produit-3.png" alt="Vin Rouge"></div>
+                <div class="carousel-slide"><img src="assets/img/produit-5.png" alt="Vin Rouge"></div>
+                <div class="carousel-slide"><img src="assets/img/produit-6.png" alt="Vin Rouge"></div>
+                <div class="carousel-slide"><img src="assets/img/produit-8.png" alt="Vin Rouge"></div>
+                <button class="carousel-prev">Prev</button>
+                <button class="carousel-next">Next</button>
+            </div>
+        </section>
+
+        <section class="post-container">
+            <h2 class="post-heading">Une passion pour le vin, une gorgée à la fois</h2>
+            <p class="post-text">Suivez-nous sur Instagram pour découvrir nos dégustations en boutique, nos nouveaux
+                crus et conseils de sommeliers! Partagez vos moments vinicoles avec nous en nous identifiant <a
+                    class="instagram" href="#">@LesVinsD'ici</a>, et faites-nous part de vos accords mets-vins et
+                découvertes favorites.
+            </p>
+            <div class="gallery">
+                <div class="gallery-item"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/degustation-vin.jpg"
+                        alt="degustation vin"></div>
+                <div class="gallery-item"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/bouteille-bouchon.jpg"
+                        alt="bouteille de vin"></div>
+                <div class="gallery-item"><img src="/tp/Tp1-2-3_PamelaLimoges/assets/img/barils-vin.jpg"
+                        alt="barils de vins"></div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <nav class="footer-nav">
+            <a href="index.html" class="footer-link">Accueil</a>
+            <a href="apropos.html" class="footer-link">À propos</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+        </nav>
+        <div class="footer-bottom">
+            <p class="footer-bottom-text">&copy; Les vins d'ici, tous les droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+
 </html>

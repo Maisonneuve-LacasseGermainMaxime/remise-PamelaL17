@@ -3,6 +3,7 @@ const carousel = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".carousel-slide");
 const nextButton = document.querySelector(".carousel-next");
 const prevButton = document.querySelector(".carousel-prev");
+const categoryLinks = document.querySelectorAll('.category-link');
 
 let activeSlide = 0;
 let slideInterval;
@@ -32,16 +33,12 @@ function initCarousel() {
 }
 
 /**
- * Affiche une image du carrousel
+ * Affiche l'image 
  * @param {*} index 
- * Parcourt toutes les images du carrousel
- * Rends visible que celle qui correspond a l'index passer en parametre
  */
 function showSlide(index) {
     slides.forEach(function (slide, i) {
-        // Si l'index actuel est le meme que celui donner, l'image est visible en block
-        // sinon, elle est masquer en none
-        slide.style.display = (i === index) ? "block" : "none";
+        slide.classList.toggle('hidden', i !== index); // Masque en utilisant la classe hidden
     });
 }
 
@@ -77,6 +74,46 @@ function stopCarousel() {
     clearInterval(slideInterval);
 }
 
+// Fonction pour initialiser le carrousel en fonction de la categorie selectionner
+function initCategoryCarousel(selectedSlides) {
+    activeSlide = 0;
+    // Masque toutes les images en ajoutant la classe hidden
+    slides.forEach(function(slide) {
+        slide.classList.add('hidden'); 
+    });
+    // Affiche les images de la categorie selectionner en retirant la classe hidden
+    selectedSlides.forEach(function(slide) {
+        slide.classList.remove('hidden'); 
+    });
+    // Affiche le carrousel en retirant la classe hidden
+    carousel.classList.remove('hidden'); 
+    initCarousel(); // Initialise le carrousel
+}
+
+// Fonction pour gerer les clics sur les liens de categorie
+function initCategoryLinks() {
+    // Ajoute un ecouteur d'evenements pour chaque lien de categorie
+    categoryLinks.forEach(function(link) {
+        link.addEventListener('click', function(evenement) {
+
+            evenement.preventDefault();
+
+            // Verifie si le lien cliquer est le vin blanc
+            const isWhiteWine = link.classList.contains('white-wine'); 
+
+            // Selectionne les images de la categorie selectionner
+            const selectedSlides = isWhiteWine 
+                ? document.querySelectorAll('.white-wine-carousel .carousel-slide') 
+                : document.querySelectorAll('.red-wine-carousel .carousel-slide');
+
+            // Initialise le carrousel de la slide selectionner
+            initCategoryCarousel(selectedSlides); 
+        });
+    });
+}
+
+// Initialisation du carrousel et des categories
+initCategoryLinks();
 
 // Exporte les elements dans le fichier a-propos.js
-export { initCarousel, nextSlide, prevSlide };
+export { initCategoryCarousel, initCategoryLinks, initCarousel, nextSlide, prevSlide };

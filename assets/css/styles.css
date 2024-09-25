@@ -4,6 +4,7 @@
 @import url("./components/buttons.css");
 @import url("./components/modal.css");
 @import url("./components/carousel.css");
+@import url("./components/themes.css");
 
 /* Mise en page complexe */
 @import url("./layout/general.css");
@@ -12,7 +13,7 @@
 @import url("./layout/a-propos.css");
 @import url("./layout/mediaqueries.css");
 
-/* Exceptions */
+
 
 
 

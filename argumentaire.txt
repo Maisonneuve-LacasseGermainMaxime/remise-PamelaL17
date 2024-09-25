@@ -1,0 +1,32 @@
+Fonctionnalités de la page
+
+    Thème Sombre et Clair : Un bouton permet aux utilisateurs de passer du mode sombre au mode clair. Le thème choisi est enregistrer dans le stockage local
+
+    Modal : Un formulaire modal permet aux utilisateurs de s'inscrire à la newsletter.
+
+    Carrousel : Le carrousel affiche deux catégories de vins soit blanc ou rouge. Les utilisateurs peuvent naviguer à travers les catégories en utilisant les liens cliquables qui affiche soit le carrousel de vin blanc ou rouge.
+
+Choix de design
+
+    Palette de Couleurs : J'ai choisi une palette de couleurs douce avec un fond clair.
+
+    Typographie : J'ai utilisé une police élégante qui reflete le theme du vin. 
+
+    Disposition Flexbox : J'ai utilisé Flexbox pour garantir que les éléments s'ajustent bien sur différents écrans.
+
+Difficultés rencontrées
+
+    Carrousel : J'ai voulu créer deux liens cliquables, un pour le vin rouge et un pour le vin blanc. Quand on clique sur le lien du vin rouge, un carrousel d'images de vin rouge devait apparaître, et quand on clique sur le lien du vin blanc, un carrousel d'images de vin blanc devait s'afficher. Cependant, je n'ai pas réussi à faire fonctionner tout cela comme prévu.
+
+
+Structure du code et organisation des fichiers
+
+
+
+Tests et qualité du code 
+
+    J'ai fait en sorte que mon code soit simple et facile à comprendre et en évitant les fonctions fléchées. J'ai aussi ajouté des commentaires, afin que ce soit plus simple à modifier plus tard.
+
+    J'ai vérifié que la page fonctionne bien sur plusieurs navigateurs (Chrome, Firefox, Edge).
+
+    J'ai aussi utilisé des console.log dans mon code pour vérifier que certaines parties fonctionnaient correctement.
