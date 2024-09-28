@@ -9,6 +9,11 @@
 
 .carousel-section h2 {
     text-shadow: 1px 1px 1px rgba(146, 115, 115, 0.7);
+    transition: flex-grow 350ms;
+}
+
+.carousel-section a.actif {
+    flex-grow: 2;
 }
 
 .carousel {

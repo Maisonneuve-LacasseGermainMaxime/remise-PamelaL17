@@ -21,6 +21,7 @@ Difficultés rencontrées
 
 Structure du code et organisation des fichiers
 
+    J'ai structuré mon code en séparant chaque fonctionnalité dans des fichiers distincts afin de rendre l'organisation plus claire et de faciliter la maintenance.
 
 
 Tests et qualité du code 

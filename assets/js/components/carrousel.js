@@ -87,7 +87,7 @@ function initCategoryCarousel(selectedSlides) {
     });
     // Affiche le carrousel en retirant la classe hidden
     carousel.classList.remove('hidden'); 
-    initCarousel(); // Initialise le carrousel
+    initCarousel();
 }
 
 // Fonction pour gerer les clics sur les liens de categorie
